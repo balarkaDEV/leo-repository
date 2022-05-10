@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: hospital-service
+
+root:
+  service:
+    name: Hospital Service
+    description: Hospital Master Service
+    version: v1
+    usage: Proprietary Usage
+    owner: Balarka Brahma
+    website: NA
+    officialemail: balarka.brahma@gmail.com
+    license: Public API Lincense
+    baseurl: /service/leo
+    moduleurl: ${root.service.baseurl}/hospital

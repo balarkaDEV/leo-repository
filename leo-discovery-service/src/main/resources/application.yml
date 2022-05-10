@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: leo-discovery-service
+
+server:
+  port: 8761
+
+logging:
+  level:
+    com:
+      fotos:
+        discovery:
+          service: DEBUG
+    org:
+      springframework:
+        web:
+          servlet:
+            DispatcherServlet: DEBUG
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    leaseRenewalIntervalInSeconds: 10
+    statusPageUrlPath: /info
+    healthCheckUrlPath: /health
